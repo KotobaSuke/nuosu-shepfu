@@ -1,5 +1,5 @@
 # Nuosu SHEPFU
-ꎹꃚ / SHEPFU, a Nuosu Yi Syllabary Character Finder &amp; Editor
+ꎹꃚ / SHEPFU (pronounced /ʂɤ̂.fv̩̄/), a Nuosu Yi Syllabary Character Finder &amp; Editor
 
 # References
 * **_Yi script character index: Yi-Chinese bilingual edition_** [彝文检字本（彝汉文对照版）; _Yíwén Jiǎnzìběn (Yí-Hànwén Duìzhàobǎn)_]. (1984). Sichuan Nationalities Publishing House [四川民族出版社; _Sìchuān Mínzú Chūbǎnshè_].
