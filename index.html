@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">彝文形态检字编辑器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="input-section">
+            <div class="editor-header">
+                <div class="title-group">
+                    <h2 data-i18n="title">彝文形态检字编辑器</h2>
+                    <p class="subtitle" data-i18n="subtitle">ꎹꃚ / SHEPFU 凉山规范彝文检字编辑器</p>
+                </div>
+                <div class="header-controls">
+                    
+                    <select id="lang-selector" onchange="setLanguage(this.value)">
+                        <option value="zh">中文</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                    
+                    <button id="copy-btn" class="copy-btn" data-i18n="copy_btn">📋 复制文本</button>
+                </div>
+            </div>
+            <textarea id="editor" data-i18n="editor_placeholder" placeholder="在此处输入或点击下方按钮插入字符..."></textarea>
+            <div id="transliteration-display" class="transliteration-box">
+                <span class="trans-label" data-i18n="trans_label">拼音转写:</span> 
+                <span id="trans-content"></span>
+            </div>
+        </div>
+
+        
+        <div class="controls-row">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchMode('radical')" data-i18n="tab_radical">部首检字</button>
+                <button class="tab-btn" onclick="switchMode('stroke')" data-i18n="tab_stroke">笔画检字</button>
+                <button class="tab-btn" onclick="switchMode('pinyin')" data-i18n="tab_pinyin">拉丁转写检字</button>
+            </div>
+
+            <div id="info-display" class="info-box" data-i18n="info_default">
+                悬停在字符上查看详细信息
+            </div>
+        </div>
+        
+        <div class="workspace">
+            
+            
+            <div id="panel-radical" class="mode-panel active">
+                <div class="side-bar">
+                    <h3 data-i18n="radical_select_title">选择部首</h3>
+                    <div id="radical-buttons"></div>
+                </div>
+                <div class="main-content">
+                    <h3><span data-i18n="radical_list_title">字符列表</span> (<span id="current-radical-name" data-i18n="radical_no_selection">未选择</span>)</h3>
+                    <div id="radical-char-buttons" class="char-grid"></div>
+                </div>
+            </div>
+
+            
+            <div id="panel-stroke" class="mode-panel">
+                <div class="side-bar">
+                    <h3 data-i18n="stroke_input_title">笔画输入</h3>
+                    <div id="stroke-input-display" class="stroke-display"></div>
+                    <button id="clear-stroke-btn" class="action-btn" data-i18n="stroke_clear_btn">清空笔画 (Esc)</button>
+                    
+                    <h4 data-i18n="stroke_keyboard_title">笔画键盘</h4>
+                    <div id="stroke-keyboard" class="stroke-grid">
+                        
+                    </div>
+                </div>
+                <div class="main-content">
+                    <h3><span data-i18n="stroke_match_title">匹配字符</span> (<span id="match-count">0</span> <span data-i18n="stroke_count_suffix">个</span>)</h3>
+                    <div id="stroke-char-buttons" class="char-grid">
+                        <p class="hint" data-i18n="stroke_hint">请输入笔画以筛选字符</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="panel-pinyin" class="mode-panel">
+                <div class="side-bar">
+                    <h3 data-i18n="pinyin_input_title">转写输入</h3>
+                    <input type="text" id="pinyin-input" class="pinyin-input-box" data-i18n-placeholder="pinyin_placeholder">
+                    <button id="clear-pinyin-btn" class="action-btn" data-i18n="pinyin_clear_btn">清空 (Esc)</button>
+                </div>
+                <div class="main-content">
+                    <h3><span data-i18n="pinyin_match_title">匹配字符</span> (<span id="pinyin-match-count">0</span> <span data-i18n="stroke_count_suffix">个</span>)</h3>
+                    <div id="pinyin-char-buttons" class="char-grid">
+                        <p class="hint" data-i18n="pinyin_hint">输入拉丁转写以筛选字符</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="data_chars.js"></script>
+    <script src="data_strokes.js"></script>
+    <script src="data_radicals.js"></script>
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
