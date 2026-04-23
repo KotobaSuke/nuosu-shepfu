@@ -4,7 +4,7 @@ const translations = {
         editor_placeholder: "在此处输入或点击下方按钮插入字符...",
         copy_btn: "📋 复制文本",
         copied: "✅ 已复制",
-        info_default: "悬停在字符上查看详细信息",
+        info_default: "将鼠标指针悬停在字符上查看详细信息",
         tab_radical: "部首检字",
         tab_stroke: "笔画检字（测试）",
         trans_label: "拉丁转写:",
