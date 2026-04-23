@@ -40,6 +40,7 @@ const translations = {
         info_char: "字符",
         info_pinyin: "拉丁转写",
         info_strokes: "笔画",
+        info_ipa: "国际音标",
         info_none: "无",
 
         load_error: "加载错误",
@@ -88,6 +89,7 @@ const translations = {
         info_char: "Char",
         info_pinyin: "Romanization",
         info_strokes: "Strokes",
+        info_ipa: "IPA",
         info_none: "None",
 
         load_error: "Load Error",
@@ -136,6 +138,7 @@ const translations = {
         info_char: "文字",
         info_pinyin: "ローマ字",
         info_strokes: "筆画",
+        info_ipa: "音声記号",
         info_none: "なし",
 
         load_error: "読み込みエラー",

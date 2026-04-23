@@ -1,3 +1,5 @@
+import { toIPA } from './phonetic-converter.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof charInfo === 'undefined' || typeof charStrokes === 'undefined' || typeof radicalMap === 'undefined') {
         alert(t('load_error'));
@@ -55,12 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function showInfo(char) {
         const pinyin = charInfo[char] || "?";
         const strokes = charStrokes[char] || "";
+        const ipa = toIPA(pinyin) || "?";
         
         const formattedStrokes = strokes ? strokes.split('').join('-') : t('info_none');
         
         infoDisplay.innerHTML = `
             <strong>${t('info_char')}:</strong> ${char} | 
-            <strong>${t('info_pinyin')}:</strong> ${pinyin}
+            <strong>${t('info_pinyin')}:</strong> ${pinyin} |
+            <strong>${t('info_ipa')}:</strong> /${ipa}/
         `;
         // | <strong>${t('info_strokes')}:</strong> ${formattedStrokes}
     }
