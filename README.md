@@ -2,7 +2,7 @@
 ꃚꎹ / FUSHEP (pronounced /fū.ʂɤ̂/), a Nuosu Yi Syllabary Character Finder &amp; Editor
 
 # Deployment
-https://kotobatrilius.github.io/nuosu-shepfu/
+https://kotobatrilius.github.io/nuosu-fushep/
 
 # Acknowledgement
 * **Font Support**: [NiepshaExtremum](https://github.com/Keedizhang/NiepshaExtremum) by Keedizhang
