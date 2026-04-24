@@ -1,6 +1,7 @@
 const radicalMap = {
     "꒐": {
         name: "ꐈꀨ",
+        name_trans: "QOT",
         syllables: [
             [1, ["yy", "yyx", "pu", "pux", "xy", "xyx", "nzy"]],
             [2, ["nbiep", "bbi", "bbix", "nyot", "kut", "ddu", "ddux", "hly", "hlyx", "nyup", "jjur", "jjurx", "ndu", "ndux", "bbot", "a", "ax", "fo", "fox", "zzyp", "shyt", "bi", "bix", "pat", "nbup", "xyr"]],
@@ -11,6 +12,7 @@ const radicalMap = {
     },
     "꒑": {
         name: "ꆹꀨ",
+        name_trans: "LI",
         vars: ["꒒"],
         syllables: [
             [1, ["li", "lix", "liep", "ggo", "ggox", "bu", "bux", "nji", "njix", "njit"]],
@@ -22,6 +24,7 @@ const radicalMap = {
     },
     "꒓": {
         name: "ꑍꀨ",
+        name_trans: "NYIP",
         syllables: [
             [1, ["nyip", "ci", "cix", "kop", "la", "lax", "hit", "ggie"]],
             [2, ["suo", "suox", "suop", "sip", "hxep", "huo", "huox", "hmap", "dur", "durx", "hni", "hnix", "tep", "mo", "mox", "cha", "chax", "chat", "zhuo", "zhuox", "zhot", "hnip", "rat", "jyt", "wep", "luo", "luox", "zzu", "zzux", "ie", "iex", "ciep", "cit", "xo", "xox", "ssop", "he", "hex", "rrut", "ruo", "ruox", "ciet", "mgie", "mgiex", "rryp", "zhu"]],
@@ -32,6 +35,7 @@ const radicalMap = {
     },
     "꒔": {
         name: "ꋍꀨ",
+        name_trans: "CYP",
         syllables: [
             [0, ["cyp"]],
             [1, ["ge", "gex", "hxo", "hxox", "sse", "ssex", "nuo", "nuox", "dop", "lo", "lox", "ggot", "by", "byx", "hie", "hiex", "cuo"]],
@@ -43,6 +47,7 @@ const radicalMap = {
     },
     "꒕": {
         name: "ꌬꀨ",
+        name_trans: "SSI",
         syllables: [
             [1, ["at", "tip", "hna", "hnax", "ggut", "kie", "kiex", "nzop"]],
             [2, ["gip", "yie", "yiex", "hmiep", "fur", "furx", "jyr", "jyrx", "zzy", "zzyx", "lit", "bbu", "bbux", "hat", "hliep", "ssi", "ssix", "bip", "zep", "myt", "vop", "vup"]],
@@ -53,6 +58,7 @@ const radicalMap = {
     },
     "꒖": {
         name: "ꈥꀨ",
+        name_trans: "GGOP",
         syllables: [
             [1, ["rry", "rryx", "ggop", "shyp", "nga"]],
             [2, ["nyit", "hnie", "hniex", "njy", "njyx", "syp", "nryt", "ndot", "ggap", "le", "lex", "ndo", "ndox", "ggat", "mgap", "nre", "nrex", "zo", "zox", "fy", "fyx", "hmuo", "hmuox", "fyt"]],
@@ -63,6 +69,7 @@ const radicalMap = {
     },
     "꒗": {
         name: "ꇱꀨ",
+        name_trans: "GEP",
         vars: ["꒘"],
         syllables: [
             [1, ["gep", "di", "dix", "do", "dox", "mi"]],
@@ -73,6 +80,7 @@ const radicalMap = {
     },
     "꒙": {
         name: "ꉆꀨ",
+        name_trans: "HXIT",
         syllables: [
             [1, ["hxit", "lyp", "hma"]],
             [2, ["ji", "jix", "ggiep", "ly", "lyx", "lep", "wa", "wax", "wap", "bbur", "bburx", "chy", "chyx", "dep", "rrep", "cho", "chox", "zhyp"]],
@@ -83,6 +91,7 @@ const radicalMap = {
     },
     "꒚": {
         name: "ꇙꀨ",
+        name_trans: "LYR",
         vars: ["꒛"],
         syllables: [
             [0, ["lyr"]],
@@ -94,6 +103,7 @@ const radicalMap = {
     },
     "꒜": {
         name: "ꃀꀨ",
+        name_trans: "MOP",
         vars: ["꒝", "꒞"],
         syllables: [
             [0, ["mop", "put"]],
@@ -105,6 +115,7 @@ const radicalMap = {
     },
     "꒟": {
         name: "ꉔꀨ",
+        name_trans: "HXUO",
         vars: ["꒠"],
         syllables: [
             [0, ["hxuo"]],
@@ -117,6 +128,7 @@ const radicalMap = {
     },
     "꒡": {
         name: "ꇤꀨ",
+        name_trans: "GA",
         vars: ["꒢", "꒣"],
         syllables: [
             [1, ["syr", "syrx", "sy", "syx", "qy", "qyx", "ga", "gax", "kup", "cyt"]],
@@ -128,6 +140,7 @@ const radicalMap = {
     },
     "꒤": {
         name: "ꅐꀨ",
+        name_trans: "DDUR",
         vars: ["꒥", "꒦"],
         syllables: [
             [1, ["gu", "gux", "ddur", "ddurx", "jur", "jurx", "mgur", "mgurx", "ngat", "njip", "vot", "va", "vax", "zzyr", "zzyrx", "gguo", "gguox", "nziep"]],
@@ -139,6 +152,7 @@ const radicalMap = {
     },
     "꒧": {
         name: "ꑘꀨ",
+        name_trans: "NYOP",
         syllables: [
             [0, ["nyop"]],
             [1, ["ndip", "ki"]],
@@ -149,6 +163,7 @@ const radicalMap = {
     },
     "꒨": {
         name: "ꄲꀨ",
+        name_trans: "TU",
         syllables: [
             [0, ["tu"]],
             [1, ["qip", "hlep", "qu", "qux", "ho", "hox", "ca", "cax", "ce", "cex", "hle"]],
@@ -159,6 +174,7 @@ const radicalMap = {
         ]},
     "꒩": {
         name: "ꀒꀨ",
+        name_trans: "OP",
         syllables: [
             [1, ["ma", "max", "hlop", "hlat", "sup", "op", "nie", "niex", "pi", "pix", "bie", "biex", "cie", "ciex", "ro", "rox", "rap", "biep", "dot"]],
             [2, ["hlur", "hlurx", "bbip", "mgat", "iet", "hluop", "hlip", "hnuo", "hnuox", "ngo", "ngox", "cop", "co", "cox", "zuo", "zuox", "nuop", "o", "ox", "zhut", "rep", "bit", "cur", "curx", "zut", "nrut", "mgep", "juop", "tut", "biet"]],
@@ -168,6 +184,7 @@ const radicalMap = {
         ]},
     "꒪": {
         name: "ꐧꀨ",
+        name_trans: "JJUT",
         vars: ["꒫"],
         syllables: [
             [1, ["ggur", "ggurx", "nrur", "nrurx", "jjut", "shup", "ot", "zot"]],
@@ -178,6 +195,7 @@ const radicalMap = {
         ]},
     "꒬": {
         name: "ꁐꀨ",
+        name_trans: "PYT",
         vars: ["꒭", "꒮", "꒯"],
         syllables: [
             [0, ["pyt"]],
@@ -189,6 +207,7 @@ const radicalMap = {
         ]},
     "꒰": {
         name: "ꏂꀨ",
+        name_trans: "SHY",
         vars: ["꒱", "꒲"],
         syllables: [
             [0, ["shy"]],
@@ -199,6 +218,7 @@ const radicalMap = {
         ]},
     "꒳": {
         name: "ꏮꀨ",
+        name_trans: "JO",
         vars: ["꒴", "꒵", "꒶", "꒷"],
         syllables: [
             [1, ["jo"]],
@@ -209,6 +229,7 @@ const radicalMap = {
         ]},
     "꒸": {
         name: "ꎿꀨ",
+        name_trans: "SHUR",
         vars: ["꒹", "꒺", "꒻"],
         syllables: [
             [0, ["shur"]],
@@ -218,6 +239,7 @@ const radicalMap = {
         ]},
     "꒼": {
         name: "ꋌꀨ",
+        name_trans: "CY",
         vars: ["꒽"],
         syllables: [
             [1, ["cy", "cyx", "hop", "xi", "xix", "zy", "zyx", "diep", "cuop"]],
@@ -227,6 +249,7 @@ const radicalMap = {
         ]},
     "꒾": {
         name: "ꊱꀨ",
+        name_trans: "CIP",
         vars: ["꒿"],
         syllables: [
             [0, ["cip", "hxop"]],
@@ -236,6 +259,7 @@ const radicalMap = {
         ]},
     "꓀": {
         name: "ꎫꀨ",
+        name_trans: "SHAT",
         vars: ["꓁", "꓂", "꓃"],
         syllables: [
             [0, ["shat", "shop"]],
@@ -245,6 +269,7 @@ const radicalMap = {
         ]},
     "꓄": {
         name: "ꋔꀨ",
+        name_trans: "ZZIET",
         vars: ["꓅"],
         syllables: [
             [1, ["buop", "dduo", "dduox", "hxip"]],
@@ -255,6 +280,7 @@ const radicalMap = {
         ]},
     "꓆": {
         name: "ꈌꀨ",
+        name_trans: "KE",
         syllables: [
             [1, ["ke"]],
             [2, ["gop"]],

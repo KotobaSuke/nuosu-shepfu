@@ -123,8 +123,28 @@ body {
     align-items: center;
 }
 
+.star-align-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star-me-caption {
+    font-size: 12pt;
+    color: #666;
+    line-height: 1;
+    margin-bottom: 5pt;
+}
+
+.controls-row-top {
+    margin-left: auto;
+}
+
 .controls-row-bottom {
     margin-left: auto;
+    align-items: center;
+    height: 30px;
+    justify-content: flex-end;
 }
 
 #lang-selector {

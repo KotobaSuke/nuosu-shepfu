@@ -1,6 +1,7 @@
 const translations = {
     "zh-CN": {
         subtitle: "凉山规范彝文检字编辑器",
+        star_me: "在GitHub上为我打个星 →",
         editor_placeholder: "在此处输入或点击下方按钮插入字符...",
         copy_btn: "📋 复制文本",
         copied: "✅ 已复制",
@@ -50,6 +51,7 @@ const translations = {
     },
     "zh-TW": {
         subtitle: "涼山規範彝文檢字編輯器",
+        star_me: "在GitHub上為我打个星 →",
         editor_placeholder: "在此處輸入或點擊下方按鈕插入字元...",
         copy_btn: "📋 複製文字",
         copied: "✅ 已複製",
@@ -99,6 +101,7 @@ const translations = {
     },
     en: {
         subtitle: "Nuosu Yi Syllabary Character Finder & Editor",
+        star_me: "Star me on GitHub →",
         editor_placeholder: "Type here or click buttons to insert characters...",
         copy_btn: "📋 Copy Text",
         copied: "✅ Copied",
@@ -148,6 +151,7 @@ const translations = {
     },
     ja: {
         subtitle: "フシャ — 涼山規範彝（イ）文字検索・エディタ",
+        star_me: "GitHubのスターをお願いします →",
         editor_placeholder: "ここに入力するか、ボタンをクリックして文字を挿入...",
         copy_btn: "📋 テキストをコピー",
         copied: "✅ コピーしました",
@@ -197,6 +201,7 @@ const translations = {
     },
     ko: {
         subtitle: "량산(涼山) 표준 이(彝) 문자 찾기 및 편집기",
+        star_me: "GitHub에 스타를 부탁드려요! →",
         editor_placeholder: "여기에 입력하거나 아래 버튼을 클릭하여 문자 삽입...",
         copy_btn: "📋 텍스트 복사",
         copied: "✅ 복사됨",
@@ -246,6 +251,7 @@ const translations = {
     },
     ii: {
         subtitle: "ꆃꎭꋊꄻꆈꌠꁱꂷꎹꏦꏓꁱꅍ",
+        star_me: "在GitHub上为我打个星 →",
         editor_placeholder: "在此处输入或点击下方按钮插入字符...",
         copy_btn: "📋 ꁱꂷꌡꄉꄻ",
         copied: "✅ 已复制",
@@ -295,6 +301,7 @@ const translations = {
     },
     "za": {
         subtitle: "Hongdawz Rasaw Sanraiz Sawyizcuz Gveihfan Liengzsanh",
+        star_me: "Youq GitHub hawj gou aen sing ndeu nw →",
         editor_placeholder: "Youq gizneix coqhaeuj roxnaeuz mbaenq gij anniuj baihlaj daeuj caphaeuj cihsaw...",
         copy_btn: "📋 Fukceiq cihsaw",
         copied: "✅ Fukceiq liux",
