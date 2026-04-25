@@ -222,7 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             btn.addEventListener('click', () => {
                 renderRadicalChars(radicalChar, radicalData);
-                currentRadicalLabel.textContent = radicalData.name;
+                const radicalGroupName = (["za"].includes(document.documentElement.lang) ? t("radical_group") + " " + radicalData.name_trans : radicalData.name_trans + " " + t("radical_group"));
+                currentRadicalLabel.textContent = radicalData.name + " - " + radicalGroupName;
                 currentRadicalLabel.dataset.radicalId = radicalChar;
                 delete currentRadicalLabel.dataset.i18n;
             });

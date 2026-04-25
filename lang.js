@@ -11,6 +11,7 @@ const translations = {
         trans_label: "拉丁转写:",
         
         radical_select_title: "选择部首",
+        radical_group: "部",
         radical_list_title: "字符列表",
         radical_no_selection: "未选择",
         radical_empty: "该部首下无匹配字符",
@@ -61,6 +62,7 @@ const translations = {
         trans_label: "羅馬拼音：",
         
         radical_select_title: "選擇部首",
+        radical_group: "部",
         radical_list_title: "字元列表",
         radical_no_selection: "未選擇",
         radical_empty: "該部首下無相符字元",
@@ -111,6 +113,7 @@ const translations = {
         trans_label: "Romanization:",
         
         radical_select_title: "Select Radical",
+        radical_group: "Group",
         radical_list_title: "Character List",
         radical_no_selection: "None selected",
         radical_empty: "No characters under this radical",
@@ -161,6 +164,7 @@ const translations = {
         trans_label: "ローマ字表記:",
         
         radical_select_title: "部首を選択",
+        radical_group: "部",
         radical_list_title: "文字リスト",
         radical_no_selection: "未選択",
         radical_empty: "この部首に文字はありません",
@@ -211,6 +215,7 @@ const translations = {
         trans_label: "로마자 표기:",
         
         radical_select_title: "부수 선택",
+        radical_group: "부",
         radical_list_title: "문자 목록",
         radical_no_selection: "선택 안 됨",
         radical_empty: "해당 부수에 문자가 없습니다",
@@ -261,6 +266,7 @@ const translations = {
         trans_label: "拉丁转写:",
         
         radical_select_title: "选择部首",
+        radical_group: "部",
         radical_list_title: "字符列表",
         radical_no_selection: "未选择",
         radical_empty: "该部首下暂无字符",
@@ -311,6 +317,7 @@ const translations = {
         trans_label: "Bingqyaem Latin:",
         
         radical_select_title: "Genj aen busouj",
+        radical_group: "Bouh",
         radical_list_title: "Aenbiuj cihsaw",
         radical_no_selection: "Caengz genj",
         radical_empty: "Aen busouj neix mbouj miz cihsaw",
