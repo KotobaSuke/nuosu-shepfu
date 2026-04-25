@@ -295,6 +295,11 @@ const radicalMap = {
 //  ꓀	꓁	꓂	꓃	꓄	꓅	꓆
 
 document.addEventListener('DOMContentLoaded', () => {
+    if (typeof charInfo === 'undefined') {
+        alert(t('load_error'));
+        return;
+    }
+
     const radicalContainer = document.getElementById('radical-buttons');
     const radicalCharContainer = document.getElementById('radical-char-buttons');
     const currentRadicalLabel = document.getElementById('current-radical-name');
