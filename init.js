@@ -62,8 +62,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // const formattedStrokes = strokes ? strokes.split('').join('-') : t('info_none');
 
-        const ipaPart = (pinyin == "w" ? `${t('iteration_mark')}` : `<strong>${t('info_ipa')}:</strong> <span class="ipa">/${ipa}/</span>`)
-        // FOR THE EXCEPTIONAL SYLLABLE ITERATION MARK "ꀕ" (TRANSLITERATED AS "w").
+        const ipaPart = (
+            pinyin == "w"
+            // FOR THE EXCEPTIONAL SYLLABLE ITERATION MARK "ꀕ" (TRANSLITERATED AS "w").
+            ? t('iteration_mark')
+            : (
+                pinyin.at(-1) == "="
+                // FOR RADICAL CHARACTERS, WHICH ARE ROMANIZED WITH A FINAL "="
+                ? `<strong>${t('radical_char')}</strong>`
+                : `<strong>${t('info_ipa')}:</strong> <span class="ipa">/${ipa}/</span>`)
+            )
 
         infoDisplay.innerHTML = `
             <strong>${t('info_char')}:</strong> <strong>${char}</strong> | 

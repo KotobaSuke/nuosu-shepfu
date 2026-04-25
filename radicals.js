@@ -8,7 +8,8 @@ const radicalMap = {
             [3, ["qot", "nzip", "zhe", "zhex", "hmi", "hmix", "zhy", "zhyx", "hxe", "hxex", "shut", "lyt", "huop", "jju", "jjux", "ddip", "dit", "jji", "jjix", "nry", "nryx", "nbap", "nrap", "nyu", "nyux", "ba", "bax", "bat", "ruop", "nryp", "nzyt", "ddup"]],
             [4, ["gge", "ggex", "uo", "uox", "quo", "quox", "bap", "fu", "fux", "zit", "ddiep", "mguo", "mguox", "hla", "hlax", "bbo", "bbox", "rur", "rurx", "fop"]],
             [5, ["lat", "ssyt", "ddie", "ddiex", "vyr", "vyrx", "zie", "ziex", "yyr", "yyrx", "rut", "vie"]]
-        ]
+        ],
+        radical_chars: ["qot="]
     },
     "꒑": {
         name: "ꆹꀨ",
@@ -20,7 +21,8 @@ const radicalMap = {
             [3, ["liet", "hxiet", "bbuo", "bbuox", "ndi", "ndix", "kit", "ti", "tix", "mur", "murx", "go", "gox", "hmy", "hmyx", "mut", "sit", "sat", "ngap", "bbep", "qie", "qiex", "su", "sux", "hlo", "hlox", "ndap", "zu", "zux", "hmie", "hmiex", "puop", "quot", "yup", "zuop"]],
             [4, ["hmu", "hmux", "te", "tex", "rruo", "rruox", "rrot", "tuop", "fat", "shap", "nyie"]],
             [5, ["sa", "sax", "sur", "surx", "ni", "nix", "chyp"]]
-        ]
+        ],
+        radical_chars: ["li=", "kit="]
     },
     "꒓": {
         name: "ꑍꀨ",
@@ -31,7 +33,8 @@ const radicalMap = {
             [3, ["nyi", "nyix", "hnit", "huot", "se", "sex", "fut", "sha", "shax", "zzur", "zzurx", "nze", "nzex", "ziep", "hniet", "njuo", "njuox", "jjo", "jjox", "mat", "mga", "mgax", "zho", "zhox", "xop", "byp", "rra", "rrax", "wuop", "nbip"]],
             [4, ["ddot", "vyt", "we", "wex", "she", "shex", "shep", "pyp", "nru", "nrux", "ze", "zex", "chuot"]],
             [5, ["nbit", "nzap", "jjyp"]]
-        ]
+        ],
+        radical_chars: ["nyip="]
     },
     "꒔": {
         name: "ꋍꀨ",
@@ -43,7 +46,8 @@ const radicalMap = {
             [3, ["nup", "nu", "nux", "vyp", "yiep", "muo", "muox", "yuo", "yuox", "zhur", "zhurx", "chuo", "chuox", "ngie", "ngiex", "nza", "nzax", "nzit", "bbyt"]],
             [4, ["hxap", "ggep", "so", "sox", "ko", "kox", "kuo", "kuox", "nur", "nurx", "yuot", "tur", "turx", "zzup", "hmat", "chot", "ndie", "ndiex", "ngiep"]],
             [5, ["gget", "jiet"]]
-        ]
+        ],
+        radical_chars: ["cyp="]
     },
     "꒕": {
         name: "ꌬꀨ",
@@ -54,7 +58,8 @@ const radicalMap = {
             [3, ["kot", "hnat", "rret", "zhet", "rryr", "rryrx", "ssot", "zzo", "zzox", "jjot", "nret"]],
             [4, ["zzip", "ry", "ryx", "ssip", "zat", "chyr", "chyrx", "giep"]],
             [5, ["ddop", "ssit"]]
-        ]
+        ],
+        radical_chars: ["ssi="]
     },
     "꒖": {
         name: "ꈥꀨ",
@@ -65,7 +70,8 @@ const radicalMap = {
             [3, ["tuo", "tuox", "rryt", "ssut"]],
             [4, ["ndop", "ssup", "shet", "jie"]],
             [5, ["hmyp"]]
-        ]
+        ],
+        radical_chars: ["ggop="]
     },
     "꒗": {
         name: "ꇱꀨ",
@@ -76,7 +82,8 @@ const radicalMap = {
             [2, ["hlut", "bbup", "nep", "nop", "fip", "nda", "ndax", "get", "ndat", "cup", "njyr", "njyrx", "na", "nax", "ssy", "ssyx", "hlyr", "hlyrx", "mip", "miep", "hmuop", "yut", "nbyp", "njur"]],
             [3, ["nap", "to", "tox", "kap", "lap", "hnop", "hnox", "hnut", "hnot", "ssu", "ssux", "chyt", "hniep"]],
             [4, ["no"]]
-        ]
+        ],
+        radical_chars: ["gep=", "mi="]
     },
     "꒙": {
         name: "ꉆꀨ",
@@ -87,7 +94,8 @@ const radicalMap = {
             [3, ["zziep", "ddit", "shuop", "fa", "fax", "zzit", "vip", "bbe"]],
             [4, ["ndit", "fap", "ssie", "ssiex", "ijyt", "ssiep"]],
             [5, ["zha"]]
-        ]
+        ],
+        radical_chars: ["hxit="]
     },
     "꒚": {
         name: "ꇙꀨ",
@@ -99,7 +107,8 @@ const radicalMap = {
             [2, ["sot", "njyt", "zhyt", "ryt"]],
             [3, ["gga"]],
             [4, ["sop", "sep", "bbut", "zyt", "jip"]]
-        ]
+        ],
+        radical_chars: ["lyr=", "bbut="]
     },
     "꒜": {
         name: "ꃀꀨ",
@@ -111,7 +120,8 @@ const radicalMap = {
             [2, ["nro", "nrox", "git", "cap", "nbut", "nbot", "zhap", "chur"]],
             [3, ["yi", "yix", "rrop", "buo", "buox", "yuop", "luot"]],
             [5, ["ssyp"]]
-        ]
+        ],
+        radical_chars: ["mop=", "yo=", "put="]
     },
     "꒟": {
         name: "ꉔꀨ",
@@ -124,7 +134,8 @@ const radicalMap = {
             [3, ["nju", "njux", "mgu", "mgux", "vu", "vux", "jiep", "hluo", "hluox", "hne", "hnex", "tap", "kat", "wuo", "wuox", "bbie"]],
             [4, ["shyr", "shyrx", "nyiep", "nyiet", "bbat", "hnep", "rrup", "pop"]],
             [5, ["puo", "puox", "mge", "mgex", "jiuo"]]
-        ]
+        ],
+        radical_chars: ["hxuo=", "tat="]
     },
     "꒡": {
         name: "ꇤꀨ",
@@ -136,7 +147,8 @@ const radicalMap = {
             [3, ["hmur", "hmurx", "kep", "vy", "vyx", "po", "pox", "jjiet", "xyt", "mgup", "hlit", "hli", "hlix", "yu", "yux", "zzop", "gat", "zap", "zi", "zix", "zup", "jit", "giet"]],
             [4, ["jjiep", "jjit", "yyt", "nzuo", "nzuox", "sho"]],
             [5, ["ddo", "ddox", "lot", "nrup", "nyuop"]]
-        ]
+        ],
+        radical_chars: ["ga=", "zup=", "cyt="]
     },
     "꒤": {
         name: "ꅐꀨ",
@@ -148,7 +160,8 @@ const radicalMap = {
             [3, ["nzyr", "nzyrx", "quop", "gur", "gurx", "dat", "muot"]],
             [4, ["mgut", "nzie"]],
             [5, ["zhep", "nby"]]
-        ]
+        ],
+        radical_chars: ["ddur=", "bur=", "gguo="]
     },
     "꒧": {
         name: "ꑘꀨ",
@@ -159,7 +172,8 @@ const radicalMap = {
             [2, ["rro"]],
             [3, ["lop"]],
             [4, ["nbat", "fit"]]
-        ]
+        ],
+        radical_chars: ["nyop="]
     },
     "꒨": {
         name: "ꄲꀨ",
@@ -171,7 +185,9 @@ const radicalMap = {
             [3, ["lut", "qop", "nrat", "bo", "box", "mit", "mie"]],
             [4, ["guop", "nzyp", "hmip"]],
             [5, ["hmup"]]
-        ]},
+        ],
+        radical_chars: ["tu="]
+    },
     "꒩": {
         name: "ꀒꀨ",
         name_trans: "OP",
@@ -181,7 +197,9 @@ const radicalMap = {
             [3, ["qut", "hxiep", "pie", "piex", "not", "ra", "rax", "iep", "chap", "zze", "zzex", "njie", "njiex", "juot", "cut", "pot", "nbu", "nbux", "xuo", "xuox", "bbit"]],
             [4, ["bbuop", "si", "six", "hep", "nbur", "nburx", "gut", "muop", "pur", "purx", "qo", "qox", "nbyt", "ngep"]],
             [5, ["nra", "nrax", "chu", "chux", "zhat", "chup"]]
-        ]},
+        ],
+        radical_chars: ["op="]
+    },
     "꒪": {
         name: "ꐧꀨ",
         name_trans: "JJUT",
@@ -192,7 +210,9 @@ const radicalMap = {
             [3, ["ndup", "re", "rex", "tup", "hlie", "hliex", "ssap", "hlup", "hap", "mgot", "nbi"]],
             [4, ["rru", "rrux", "ndur", "ndurx", "ssa", "ssax", "ha", "hax", "gguop"]],
             [5, ["hmyr", "hmyrx", "njiep"]]
-        ]},
+        ],
+        radical_chars: ["jjut=", "zot="]
+    },
     "꒬": {
         name: "ꁐꀨ",
         name_trans: "PYT",
@@ -204,7 +224,9 @@ const radicalMap = {
             [3, ["hmo"]],
             [4, ["nit"]],
             [5, ["byr"]]
-        ]},
+        ],
+        radical_chars: ["pyt=", "hmo=", "yit=", "vur="]
+    },
     "꒰": {
         name: "ꏂꀨ",
         name_trans: "SHY",
@@ -215,7 +237,9 @@ const radicalMap = {
             [2, ["mgop", "hlu", "hlux", "za", "zax", "ggit"]],
             [3, ["bot", "jjup", "zyp", "tuot"]],
             [4, ["zyr", "zyrx", "top"]]
-        ]},
+        ],
+        radical_chars: ["shy=", "vep=", "za="]
+    },
     "꒳": {
         name: "ꏮꀨ",
         name_trans: "JO",
@@ -226,7 +250,9 @@ const radicalMap = {
             [3, ["map", "nbo", "nbox", "cep", "xot", "dip", "bbop"]],
             [4, ["njiet", "ssat", "nzu", "nzux", "got", "ssyr"]],
             [5, ["nzup"]]
-        ]},
+        ],
+        radical_chars: ["jo=", "nzup=", "jjy=", "got=", "jjie="]
+    },
     "꒸": {
         name: "ꎿꀨ",
         name_trans: "SHUR",
@@ -236,7 +262,9 @@ const radicalMap = {
             [1, ["mup", "lie", "liex", "siep"]],
             [2, ["wo"]],
             [3, ["du"]]
-        ]},
+        ],
+        radical_chars: ["wo=", "du=", "shur=", "lie="]
+    },
     "꒼": {
         name: "ꋌꀨ",
         name_trans: "CY",
@@ -246,7 +274,9 @@ const radicalMap = {
             [2, ["qi", "qix", "wop", "nba", "nbax", "pip", "ndut", "lur", "lurx", "lup", "cyr", "cyrx", "nguot", "rot", "rop"]],
             [3, ["zzap", "qiep", "xiep", "zhop"]],
             [4, ["zza"]]
-        ]},
+        ],
+        radical_chars: ["cy=", "cuop="]
+    },
     "꒾": {
         name: "ꊱꀨ",
         name_trans: "CIP",
@@ -256,7 +286,9 @@ const radicalMap = {
             [1, ["hmut", "py", "pyx", "kiep", "njo"]],
             [2, ["kip", "ddut", "hxi", "hxix", "nbyr"]],
             [3, ["qiet", "njot", "qyr"]]
-        ]},
+        ],
+        radical_chars: ["cip=", "hxop="]
+    },
     "꓀": {
         name: "ꎫꀨ",
         name_trans: "SHAT",
@@ -266,7 +298,9 @@ const radicalMap = {
             [1, ["ka", "kax", "da", "dax", "dap", "qyt", "guot", "hnap"]],
             [2, ["ggu", "ggux", "bba", "bbax", "ggup", "guo", "guox", "zur", "zurx", "che", "chex", "chep", "nguo"]],
             [3, ["chuop", "cu", "cux", "chet"]]
-        ]},
+        ],
+        radical_chars: ["shat=", "zur=", "shop=", "che="]
+    },
     "꓄": {
         name: "ꋔꀨ",
         name_trans: "ZZIET",
@@ -277,7 +311,9 @@ const radicalMap = {
             [3, ["shuo", "shuox", "viep", "ru", "rux", "zzie", "zziex", "bep"]],
             [4, ["bop", "dda", "ddax", "ddap"]],
             [5, ["zzat", "zziet"]]
-        ]},
+        ],
+        radical_chars: ["zziet=", "nbie="]
+    },
     "꓆": {
         name: "ꈌꀨ",
         name_trans: "KE",
@@ -286,7 +322,9 @@ const radicalMap = {
             [2, ["gop"]],
             [3, ["nzi", "nzix", "ta", "tax", "fup"]],
             [4, ["zzyt"]]
-        ]}
+        ],
+        radical_chars: ["ke="]
+    }
 };
 
 //  ꒐	꒑	꒒	꒓	꒔	꒕	꒖	꒗	꒘	꒙	꒚	꒛	꒜	꒝	꒞	꒟
@@ -322,7 +360,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
             btn.addEventListener('click', () => {
                 renderRadicalChars(radicalChar, radicalData);
-                const radicalGroupName = (["za"].includes(document.documentElement.lang) ? t("radical_group") + " " + radicalData.name_trans : radicalData.name_trans + " " + t("radical_group"));
+                const radicalGroupName = (
+                    ["za"].includes(document.documentElement.lang) 
+                    ? t("radical_group") + " " + radicalData.name_trans 
+                    : radicalData.name_trans + " " + t("radical_group")
+                );
+                // SOME LANGUAGES HAVE "... Group" FORMAT WHILE THE OTHERS HAVE "Group ...".
                 currentRadicalLabel.textContent = radicalData.name + " - " + radicalGroupName;
                 currentRadicalLabel.dataset.radicalId = radicalChar;
                 delete currentRadicalLabel.dataset.i18n;
@@ -335,20 +378,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderRadicalChars(radicalChar, radicalData) {
         radicalCharContainer.innerHTML = '';
         
-        const groups = radicalData.syllables || [];
+        const groups = [[-1, radicalData.radical_chars]].concat(radicalData.syllables) || [];
 
         if (!groups.length) {
             radicalCharContainer.innerHTML = `<p class="hint">${t('radical_empty')}</p>`;
             return;
         }
 
-        
         groups.forEach(group => {
-            const strokeCount = group[0]; 
-            const syllableList = group[1]; 
+            const strokeCount = group[0];
+            const syllableList = group[1];
+            console.log(syllableList)
             
             if (!syllableList || syllableList.length === 0) return;
-
             
             const charsInGroup = [];
             syllableList.forEach(syl => {
@@ -364,13 +406,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const rowDiv = document.createElement('div');
             rowDiv.className = 'radical-stroke-row';
 
-            
             const labelSpan = document.createElement('span');
             labelSpan.className = 'stroke-label';
             
-            labelSpan.textContent = t(`radical_stroke_${strokeCount}`) || `${strokeCount}画`;
+            labelSpan.textContent = t(strokeCount == -1 ? `radical_chars` : `radical_stroke_${strokeCount}`);
             rowDiv.appendChild(labelSpan);
-
             
             const charsDiv = document.createElement('div');
             charsDiv.className = 'stroke-char-list';
