@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderRadicalChars(radicalData) {
+    function renderRadicalChars(radicalChar, radicalData) {
         radicalCharContainer.innerHTML = '';
         
         const groups = radicalData.syllables || [];
