@@ -52,11 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.copyBtn = document.getElementById('copy-btn');
     window.transContent = document.getElementById('trans-content');
 
-    const pinyinInput = document.getElementById('pinyin-input');
-    const pinyinCharContainer = document.getElementById('pinyin-char-buttons');
-    const pinyinMatchCountLabel = document.getElementById('pinyin-match-count');
-    const clearPinyinBtn = document.getElementById('clear-pinyin-btn');
-
     infoDisplay.textContent = t('info_default');
     infoDisplay.dataset.i18n = 'info_default';
 
@@ -78,70 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // | <strong>${t('info_strokes')}:</strong> ${formattedStrokes}
     };
 
-    function filterCharsByPinyin() {
-        pinyinCharContainer.innerHTML = '';
-        const query = pinyinInput.value.toLowerCase().trim();
-
-        if (!query) {
-            pinyinCharContainer.innerHTML = `<p class="hint">${t('pinyin_hint')}</p>`;
-            pinyinMatchCountLabel.textContent = '0';
-            return;
-        }
-
-        const matchedEntries = Object.entries(charLookupReverse)
-            .filter(([pinyin, char]) => pinyin.startsWith(query))
-            .sort((entry1, entry2) => entry1[0].localeCompare(entry2[0]));
-
-        const matchedChars = matchedEntries
-            .map(([pinyin, char]) => [char, pinyin === query]);
-        
-        pinyinMatchCountLabel.textContent = matchedChars.length;
-
-        if (matchedChars.length === 0) {
-            pinyinCharContainer.innerHTML = `<p class="hint">${t('pinyin_no_match')}</p>`;
-        } else {
-            matchedChars.forEach(([char, exact]) => {
-                const btn = createCharButton(char, exact);
-                if (btn) pinyinCharContainer.appendChild(btn);
-            });
-        }
-    }
-
-    pinyinInput.addEventListener('input', filterCharsByPinyin);
-
-    function flushPinyinExactMatches() {
-        const elements = pinyinCharContainer.querySelectorAll('.exact-match');
-        console.log(elements);
-        if (elements.length === 0) return;
-
-        const chars = Array.from(elements).map(elem => elem.textContent);
-        const str = chars.join('');
-        insertAtCursor(editor, str);
-        clearPinyin();
-    }
-
-    pinyinInput.addEventListener('keydown', (e) => {
-        if (e.key == 'Enter') flushPinyinExactMatches();
-    });
-
-    function clearPinyin() {
-        pinyinInput.value = "";
-        filterCharsByPinyin();
-        pinyinInput.focus();
-    }
-
-    clearPinyinBtn.addEventListener('click', clearPinyin);
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            if (document.getElementById('panel-pinyin').classList.contains('active')) {
-                if (document.activeElement === pinyinInput) {
-                    clearPinyin();
-                }
-            }
-        }
-    });
-
     function updateTransliteration() {
         const text = editor.value;
         let result = "";
@@ -160,26 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
     editor.addEventListener('input', updateTransliteration);
 
     updateTransliteration();
-
-    function isMatch(input, target) {
-        const inputCounts = {};
-        for (let char of input) {
-            inputCounts[char] = (inputCounts[char] || 0) + 1;
-        }
-
-        const targetCounts = {};
-        for (let char of target) {
-            targetCounts[char] = (targetCounts[char] || 0) + 1;
-        }
-
-        for (let char in inputCounts) {
-            if (!targetCounts[char] || targetCounts[char] < inputCounts[char]) {
-                return false;
-            }
-        }
-
-        return true;
-    }
 
     copyBtn.addEventListener('click', () => {
         const textToCopy = editor.value;
@@ -202,26 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    window.switchMode = function(mode) {
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        const buttons = document.querySelectorAll('.tab-btn');
-        if (mode === 'radical') buttons[0].classList.add('active');
-        if (mode === 'stroke') buttons[1].classList.add('active');
-        if (mode === 'pinyin') buttons[2].classList.add('active');
+    window.whenPanelActivates = {};
 
-        document.querySelectorAll('.mode-panel').forEach(panel => panel.classList.remove('active'));
-        
-        if (mode === 'radical') {
-            document.getElementById('panel-radical').classList.add('active');
-        } else if (mode === 'stroke') {
-            document.getElementById('panel-stroke').classList.add('active');
-            editor.blur(); 
-        } else if (mode === 'pinyin') {
-            document.getElementById('panel-pinyin').classList.add('active');
-            filterCharsByPinyin();
-            pinyinInput.focus();
-        }
-    };
+    document.querySelectorAll('.tab-btn').forEach(buttonSelected => {
+        buttonSelected.addEventListener('click', e => {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            buttonSelected.classList.add('active');
+            
+            const mode = buttonSelected.dataset.mode;
+            document.querySelectorAll('.mode-panel').forEach(panel => panel.classList.remove('active'));
+            document.getElementById(`panel-${mode}`).classList.add('active');
+
+            if (mode in whenPanelActivates) whenPanelActivates[mode]();
+        });
+    });
     
     setLanguage('zh-CN');
 });

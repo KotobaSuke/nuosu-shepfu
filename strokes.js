@@ -58,6 +58,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function isMatch(input, target) {
+        const inputCounts = {};
+        for (let char of input) {
+            inputCounts[char] = (inputCounts[char] || 0) + 1;
+        }
+
+        const targetCounts = {};
+        for (let char of target) {
+            targetCounts[char] = (targetCounts[char] || 0) + 1;
+        }
+
+        for (let char in inputCounts) {
+            if (!targetCounts[char] || targetCounts[char] < inputCounts[char]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     function filterCharsByStrokes() {
         strokeCharContainer.innerHTML = '';
 

@@ -56,9 +56,9 @@
         
         <div class="controls-row">
             <div class="tabs">
-                <button class="tab-btn active" onclick="switchMode('radical')" data-i18n="tab_radical">部首检字</button>
-                <button class="tab-btn" onclick="switchMode('stroke')" data-i18n="tab_stroke">笔画检字</button>
-                <button class="tab-btn" onclick="switchMode('pinyin')" data-i18n="tab_pinyin">拉丁转写检字</button>
+                <button class="tab-btn active" data-i18n="tab_radical" data-mode="radical">部首检字</button>
+                <button class="tab-btn" data-i18n="tab_stroke" data-mode="stroke">笔画检字</button>
+                <button class="tab-btn" data-i18n="tab_pinyin" data-mode="pinyin">拉丁转写检字</button>
             </div>
 
             <div id="info-display" class="info-box" data-i18n="info_default">
@@ -122,5 +122,6 @@
     <script src="init.js"></script>
     <script src="radicals.js"></script>
     <script src="strokes.js"></script>
+    <script src="pinyin.js"></script>
 </body>
 </html>

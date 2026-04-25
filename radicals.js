@@ -386,4 +386,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initRadicals();
+
+    whenPanelActivates['radical'] = () => {
+        filterCharsByStrokes();
+        editor.blur(); 
+    };
 });
