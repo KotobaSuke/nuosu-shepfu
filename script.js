@@ -100,10 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // | <strong>${t('info_strokes')}:</strong> ${formattedStrokes}
     }
 
-    function createCharButton(char) {
+    function createCharButton(char, exact = false) {
         const btn = document.createElement('button');
         btn.textContent = char;
-        btn.className = 'char-btn';
+        btn.className = exact ? 'char-btn exact-match' : 'char-btn';
         
         btn.addEventListener('click', () => {
             insertAtCursor(editor, char);
@@ -134,15 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(([pinyin, char]) => pinyin.startsWith(query))
             .sort((entry1, entry2) => entry1[0].localeCompare(entry2[0]));
 
-        const matchedChars = matchedEntries.map(([pinyin, char]) => char);
+        const matchedChars = matchedEntries
+            .map(([pinyin, char]) => [char, pinyin === query]);
         
         pinyinMatchCountLabel.textContent = matchedChars.length;
 
         if (matchedChars.length === 0) {
             pinyinCharContainer.innerHTML = `<p class="hint">${t('pinyin_no_match')}</p>`;
         } else {
-            matchedChars.forEach(char => {
-                const btn = createCharButton(char);
+            matchedChars.forEach(([char, exact]) => {
+                const btn = createCharButton(char, exact);
                 if (btn) pinyinCharContainer.appendChild(btn);
             });
         }

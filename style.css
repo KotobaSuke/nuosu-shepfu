@@ -418,6 +418,11 @@ button:hover {
     font-family: "NiepSha Sans", "Noto Sans Yi", "Microsoft YaHei", sans-serif;
 }
 
+.exact-match {
+    background: #c8e6c9;
+    border-color: #4caf50;
+}
+
 .yi-logo {
     font-family: "NiepSha Cursive" !important;
     font-size: 200%;
