@@ -58,20 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
     window.showInfo = (char) => {
         const pinyin = charInfo[char] || "?";
         const strokes = charStrokes[char] || "";
-        const ipa = toIPA(pinyin) || "?";
         
         // const formattedStrokes = strokes ? strokes.split('').join('-') : t('info_none');
 
-        const ipaPart = (
-            pinyin == "w"
-            // FOR THE EXCEPTIONAL SYLLABLE ITERATION MARK "ꀕ" (TRANSLITERATED AS "w").
-            ? t('iteration_mark')
-            : (
-                pinyin.at(-1) == "="
-                // FOR RADICAL CHARACTERS, WHICH ARE ROMANIZED WITH A FINAL "="
-                ? `<strong>${t('radical_char')}</strong>`
-                : `<strong>${t('info_ipa')}:</strong> <span class="ipa">/${ipa}/</span>`)
-            )
+        // FOR THE EXCEPTIONAL SYLLABLE ITERATION MARK "ꀕ" (TRANSLITERATED AS "w").
+        const isIterationMark = pinyin == 'w'; 
+        // FOR RADICAL CHARACTERS, WHICH ARE ROMANIZED WITH A FINAL "="
+        const isRadicalChar = pinyin.at(-1) == '=';
+
+        let ipaPart;
+
+        if (isIterationMark) {
+            ipaPart = t('iteration_mark');
+        } else if (isRadicalChar) {
+            ipaPart = `<strong>${t('radical_char')}</strong>`
+        } else {
+            const ipa = toIPA(pinyin);
+            if (ipa) {
+                ipaPart = `<strong>${t('info_ipa')}:</strong> <span class="ipa">/${ipa}/</span>`
+            } else {
+                ipaPart = t('punctuation_mark');
+            }
+        }
 
         infoDisplay.innerHTML = `
             <strong>${t('info_char')}:</strong> <strong>${char}</strong> | 

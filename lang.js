@@ -39,6 +39,7 @@ const translations = {
         pinyin_match_title: "匹配字符",
         pinyin_hint: "输入拉丁转写以筛选字符（从前侧匹配）",
         pinyin_no_match: "未找到匹配字符",
+        punctuation_mark: "标点符号",
         
         info_char: "字符",
         info_pinyin: "拉丁转写",
@@ -145,6 +146,7 @@ const translations = {
         pinyin_match_title: "Matched Characters",
         pinyin_hint: "Enter romanization to filter (prefix match)",
         pinyin_no_match: "No matching characters found",
+        punctuation_mark: "Punctuation mark",
         
         info_char: "Char",
         info_pinyin: "Romanization",
